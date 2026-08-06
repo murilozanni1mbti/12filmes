@@ -1,0 +1,39 @@
+### Teste do servidor
+GET http://localhost:3000/
+
+###
+
+### Cadastrar filme
+POST http://localhost:3000/create-movie
+Content-Type: application/json
+
+{
+    "title": "Interestelar",
+    "genre": "Ficção Científica",
+    "duration": 169,
+    "age_rating": "12"
+}
+
+###
+
+### Mostrar todos os filmes
+GET http://localhost:3000/all-movies
+
+###
+
+### Editar filme
+PUT http://localhost:3000/update-movie
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "Interestelar",
+    "genre": "Drama/Ficção Científica",
+    "duration": 169,
+    "age_rating": "10"
+}
+
+###
+
+### Apagar filme
+DELETE http://localhost:3000/delete-movie/1
