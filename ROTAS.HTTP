@@ -16,7 +16,6 @@ Content-Type: application/json
 
 ###
 
-### Mostrar todos os filmes
 GET http://localhost:3000/all-movies
 
 ###
