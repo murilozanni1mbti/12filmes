@@ -15,11 +15,7 @@ const sql = mysql2.createPool({
     database: "alunos_filmes03MB"
 })
 
-app.get("/", (request, response) => {
-    response.json({
-        message: "Servidor de Filmes"
-    })
-})
+
 
 
 app.post("/create-movie", (request, response) => {
@@ -47,7 +43,7 @@ app.post("/create-movie", (request, response) => {
 })
 
 
-app.get("/all-movies", (request, response) => {
+app.get("/", (request, response) => {
 
     const command = "SELECT * FROM filmes_MuriloZanniArthurFernandes"
 
