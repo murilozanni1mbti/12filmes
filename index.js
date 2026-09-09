@@ -73,9 +73,6 @@ app.delete("/delete-movie/:id", (request, response) => {
 
         if(error){
             console.log(error)
-            return response.status(500).json({
-                message: "Erro ao apagar filme."
-            })
         }
 
         response.json({
