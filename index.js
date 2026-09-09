@@ -18,7 +18,7 @@ const sql = mysql2.createPool({
 
 
 
-app.post("/create-movie", (request, response) => {
+app.post("/create", (request, response) => {
 
     const { title, genre, duration, age_rating } = request.body
 
